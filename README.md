@@ -51,8 +51,8 @@ Finally, it's time to start the containers:
 ```bash
 
 $ sudo docker run --name texbin_mongodb -d mongo
-$ sudo docker run --name texbin_<env>_1 -d --link "texbin_mongodb:mongodb" -v /texbin/public texbin_prod
-$ sudo docker run --name texbin_nginx_1 -d --link "texbin_<env>_1:app" --volumes-from texbin_<env>_1 -p 80:80 texbin_nginx
+$ sudo docker run --name texbin_<env>_1 -d --link texbin_mongodb:mongodb -v /texbin/public texbin_prod
+$ sudo docker run --name texbin_nginx_1 -d --link texbin_<env>_1:app --volumes-from texbin_<env>_1 -p 80:80 texbin_nginx
 ```
 
 Run `docker ps` to make sure all containers are up and running. Then, visit
