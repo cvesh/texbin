@@ -27,7 +27,7 @@ required images and start the containers in the proper order. This command
 *will* take several minutes to complete. Go grab a coffee.
 
 After it's done, run `vagrant status` to make sure all containers are up and
-running. Then, visit http://localhost to open the application.
+running. Then, visit <http://localhost> to open the application.
 
 At this point, feel free to change some code and refresh the browser to see
 the changes right away, without the need to reload the container yourself.
@@ -56,4 +56,4 @@ $ sudo docker run --name texbin_nginx_1 -d --link texbin_<env>_1:app --volumes-f
 ```
 
 Run `docker ps` to make sure all containers are up and running. Then, visit
-http://your-server-ip to open the application.
+<http://your-server-ip> to open the application.
