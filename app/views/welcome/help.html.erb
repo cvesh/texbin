@@ -1,0 +1,71 @@
+<% content_for :title, "Help - TeXBin" %>
+
+<%= render "shared/small_title" %>
+
+<%= render partial: "shared/big_title", locals: {
+  title: "Help.",
+  tagline_size: "big",
+  tagline: ""
+} %>
+
+<div class="row text">
+  <div class="col-md-12">
+    <h2>What Is TeXBin?</h2>
+
+    <p>
+      Think of TeXBin as being a Pastebin dedicated to <span class="tex">TeX</span>; it is a
+      magical place where you can submit a <code>.tex</code> file and get back a public URL
+      to its glorious PDF.
+    </p>
+
+    <p>
+      TeXBin is an open source project. Feel free to create your own private TeXBin server, change
+      the code, or do anything you want with it. The source code can be found at
+      <a href="http://github.com/danielfm/texbin">GitHub</a>.
+    </p>
+
+    <h2>Submitting A Document.</h2>
+
+    <p>
+      If you have a <code>.tex</code> file you need to share with other people - an article
+      draft or a math proof, for instance - why bother generating the PDF and hosting the
+      file yourself? Just submit it to TeXBin.
+    </p>
+
+    <h2>Common Errors.</h2>
+
+    <h3>It Says The Document I Submitted Is Invalid.</h3>
+
+    <p>
+      First, make sure the file has the <code>.tex</code> extension.
+    </p>
+
+    <p>
+      If you are still unable to post it, make sure the file is not too big. Currently,
+      the resulting file size limit is <%= number_to_human_size Rails.configuration.file_size_limit %>,
+      which should be more than enough for articles and small documents. No, we don't want
+      to typeset your thousand-pages book. :-)
+    </p>
+
+    <h3>It Says TeX Could Not Process My Document.</h3>
+
+    <p>
+      If the <span class="tex">TeX</span> processor finds an error in your document, this page
+      will help you find what went wrong by displaying the output log. Just read it carefully
+      to spot the problem, fix it, and submit the fixed document.
+    </p>
+
+    <p>
+      If you found no problem in the code itself, you're probably using a package not supported
+      by our server. Read the error log carefully to be sure. In that case, we're sorry to inform
+      that there's nothing we can do; your document is just too fancy for us.
+    </p>
+
+    <h3>It Says The Request Was Interrupted.</h3>
+
+    <p>
+      If a document takes too long to process, the request is interrupted so other users are not
+      affected. It's probably nothing, just try again a few moments later.
+    </p>
+  </div>
+</div>

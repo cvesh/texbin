@@ -1,0 +1,6 @@
+production:
+  sessions:
+    default:
+      database: texbin
+      hosts:
+        - <%= ENV.fetch('MONGODB_PORT_27017_TCP_ADDR', 'localhost') %>:<%= ENV.fetch('MONGODB_PORT_27017_TCP_PORT', '27017') %>

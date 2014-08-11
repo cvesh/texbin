@@ -1,0 +1,103 @@
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-wrapper {
+  margin: 0 30px;
+}
+
+.tex {
+  font-variant: small-caps;
+}
+
+.title {
+  margin-top: 80px;
+  text-align: center;
+
+  h1 {
+    font-family: Georgia, serif;
+    font-size: 80px;
+    color: #000;
+  }
+
+  .tagline {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: #777;
+
+    &.big {
+      font-size: 30px;
+    }
+  }
+
+  &.small {
+    margin: 0 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    h1 {
+      font-size: 30px;
+
+      a {
+        color: #999;
+      }
+    }
+  }
+}
+
+.upload {
+  margin-top: 30px;
+
+  form {
+    text-align: center;  
+
+    .btn {
+      position: relative;
+      min-width: 350px;
+
+      input[type=file] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+      }
+    }
+
+    .msg {
+      font-family: Georgia, serif;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.text {
+  h1, h2, h3, h4, h5, h6 {
+    font-variant: small-caps;
+    color: #777;
+  }
+
+  h2 {
+    color: #666;
+  }
+
+  h3, h4, h5, h6 {
+    color: #999;
+  }
+
+  * {
+    font-family: Georgia, serif;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+pre.log {
+  height: 300px;
+  overflow-y: scroll;
+}

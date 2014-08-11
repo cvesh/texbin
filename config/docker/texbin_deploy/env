@@ -1,0 +1,11 @@
+# Application settings
+
+PORT=3000
+
+# Simple key base, change this to a stronger key
+SECRET_KEY_BASE=f9538fd1575
+
+# Uses a different host for assets and processed documents
+# See config/docker/nginx/nginx.conf for more information
+UPLOAD_ASSET_HOST=http://assets.texbin.com
+TEXBIN_ASSET_HOST=http://assets.texbin.com

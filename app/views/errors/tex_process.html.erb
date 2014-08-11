@@ -1,0 +1,13 @@
+<% content_for :title, "Error - TeXlY " %>
+
+<%= render "shared/small_title" %>
+
+<%= render partial: "shared/big_title", locals: {
+  title: "Oops.",
+  tagline_size: "big",
+  tagline: "TeX couldn't process this document. Here's what happened:"
+} %>
+
+<pre class="log">
+  <%= @error.message %>
+</pre>

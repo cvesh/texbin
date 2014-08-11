@@ -1,0 +1,30 @@
+<% content_for :title, "TeXBin" %>
+
+<%= render partial: "shared/big_title", locals: {
+  title: "TeXBin.",
+  tagline_size: "small",
+  tagline: "The easiest way to share <span class='tex'>TeX</span> documents with the world.".html_safe
+} %>
+
+<div class="row upload">
+  <div class="col-12-md">
+    <%= form_tag put_document_path, method: :put, multipart: true do %>
+      <div type="button" class="btn btn-primary btn-lg">
+        <span class="glyphicon glyphicon-open"></span>
+        Select a .tex file to share...
+        <input type="file" name="file" />
+      </div>
+
+      <% if flash[:error] %>
+        <p class="msg text-danger">
+          <strong>Error:</strong> <%= flash[:error] %>
+        </p>
+      <% elsif flash[:created] %>
+        <p class="msg">
+          <strong>Success!</strong> Document available at:<br/>
+          <%= link_to @doc_url, @doc_url, target: "_blank" %>
+        </p>
+      <% end %>
+    <% end %>
+  </div>
+</div>

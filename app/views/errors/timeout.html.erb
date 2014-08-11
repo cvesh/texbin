@@ -1,0 +1,9 @@
+<% content_for :title, "Timeout - TeXlY " %>
+
+<%= render "shared/small_title" %>
+
+<%= render partial: "shared/big_title", locals: {
+  title: "Timeout.",
+  tagline_size: "big",
+  tagline: "This request was interrupted because it was taking too long to finish."
+} %>

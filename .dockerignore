@@ -1,0 +1,6 @@
+.git
+.vagrant
+
+log/
+tmp/
+public/uploads

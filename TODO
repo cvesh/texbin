@@ -1,0 +1,20 @@
+Technical Debits
+- Upstream cache control headers
+- New page to display success message
+- www.texbin.com -> texbin.com
+- Puppet
+- Tests
+- Fix blank 404/500 pages (DONE)
+- Capistrano (DONE)
+
+Release v1
+- Add permalink to the document header or footer of 1st page
+- Google Analytics
+- SEO (opengraph, meta keywords, meta description, author)
+- Terms of service
+- Rename everything to TeXBin (DONE)
+- Rename S3 bucket name + Fog configuration (DONE)
+
+Release v2
+- Add support for zip bundles
+- HackerNews?
