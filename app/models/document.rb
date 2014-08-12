@@ -16,6 +16,8 @@ class Document
     upload.file && !!(File.basename(upload.file.path) =~ /\.tex$/)
   end
 
+  # Bundles are not supported yet. I'll get back to this sometime
+
   def bundle?
     upload.file && !!(File.basename(upload.file.path) =~ /\.zip$/)
   end
