@@ -18,4 +18,5 @@ USER texbin
 # Precompile the assets
 RUN /bin/bash -l -c "rake assets:precompile"
 
-
+# Exposes the public directory as a volume
+VOLUME /texbin/app/public

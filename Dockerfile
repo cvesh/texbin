@@ -43,8 +43,3 @@ RUN /bin/bash -l -c "bundle install"
 # Copy application code to container. Try not to add steps after this one
 # so we can use the Docker caching more efficiently
 ADD . /texbin/app/
-
-# Use the -v flag to specify the container volumes instead the VOLUME
-# instruction; otherwise, you cannot 'RUN chown' it if needed
-# Ex: rake assets:precompile
-# VOLUME /texbin/app/public
