@@ -5,13 +5,15 @@
  *= require main
  */
 
-@import "twitter/bootstrap/variables";
-@import "twitter/bootstrap/mixins";
-@import "twitter/bootstrap/normalize";
-@import "twitter/bootstrap/print";
-@import "twitter/bootstrap/scaffolding";
-@import "twitter/bootstrap/grid";
-@import "twitter/bootstrap/type";
-@import "twitter/bootstrap/code";
-@import "twitter/bootstrap/buttons";
-@import "twitter/bootstrap/glyphicons";
+@import "bootstrap-sprockets";
+
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+@import "bootstrap/scaffolding";
+@import "bootstrap/grid";
+@import "bootstrap/type";
+@import "bootstrap/code";
+@import "bootstrap/buttons";
+@import "bootstrap/glyphicons";
