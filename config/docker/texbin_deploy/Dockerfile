@@ -11,12 +11,7 @@ ADD env /texbin/app/.env
 ADD mongoid.yml /texbin/app/config/mongoid.yml
 
 # Allows the user to write the precompiled assets
-USER 0
-RUN chown texbin:texbin -R tmp public
-USER texbin
-
-# Precompile the assets
-RUN /bin/bash -l -c "rake assets:precompile"
+RUN rake assets:precompile
 
 # Exposes the public directory as a volume
 VOLUME /texbin/app/public

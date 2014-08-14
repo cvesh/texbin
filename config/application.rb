@@ -22,9 +22,6 @@ module Texbin
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
-    # Makes the log accessible via Docker
-    config.logger = Logger.new(STDOUT)
-
     # Assets to be precompiled besides application.css and application.js
     config.assets.precompile += %w( error.css )
 
