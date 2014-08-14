@@ -12,3 +12,6 @@ ADD mongoid.yml /texbin/app/config/mongoid.yml
 
 # Allows the user to write the precompiled assets
 RUN rake assets:precompile
+
+# Exposes the public directory as a volume
+VOLUME /texbin/app/public

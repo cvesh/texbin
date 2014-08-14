@@ -14,9 +14,6 @@ WORKDIR /texbin/app
 # Make unicorn reachable to other containers
 EXPOSE 3000
 
-# Exposes the public directory as a volume
-VOLUME /texbin/app/public
-
 # Container should behave like an executable that runs
 # foreman start by default
 CMD ["start"]
