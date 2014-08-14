@@ -1,5 +1,9 @@
+README.md
+
 .git
-.vagrant
+.gitignore
+
+fig.yml
 
 log/
 tmp/
