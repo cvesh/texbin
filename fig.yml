@@ -4,16 +4,16 @@ mongodb:
 app:
   build: .
   ports:
-    - "3000:3000"
+    - 3000:3000
   links:
     - mongodb:mongodb
   volumes:
-    - .:/usr/src/app/
+    - .:/texbin/app
 
 nginx:
   build: config/docker/nginx
   ports:
-    - "80:80"
+    - 80:80
   links:
     - app:app
   volumes_from:
