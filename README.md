@@ -15,19 +15,19 @@ for production use!
 ## Dependencies
 
 * [Ruby](http://ruby-lang.org)
-* [Vagrant](http://vagrantup.com)
+* [Fig](http://www.fig.sh)
 * [Docker](http://docker.com)
 
 ## Running Texbin
 
-### Vagrant + Docker
+### Fig + Docker
 
-Just run `vagrant up --no-parallel --provider=docker` in order to build the
-required images and start the containers in the proper order. This command
-*will* take several minutes to complete. Go grab a coffee.
+Just run `fig up` in order to build the required images and start the containers
+in the proper order. This command *will* take several minutes to complete. Go
+grab a coffee.
 
-After it's done, run `vagrant status` to make sure all containers are up and
-running. Then, visit <http://localhost> to open the application.
+After it's done, run `fig ps` to make sure all containers are up and running.
+Then, visit <http://localhost> to open the application.
 
 At this point, feel free to change some code and refresh the browser to see
 the changes right away, without the need to reload the container yourself.
