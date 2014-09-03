@@ -1,8 +1,5 @@
 source 'https://rubygems.org'
 
-# FIXME: replace github references by actual releases that work
-#        under the most recent versions of Ruby and Rails
-
 gem 'rails', '~> 4.1.0'
 
 gem 'bootstrap-sass', '~> 3.2.0'
