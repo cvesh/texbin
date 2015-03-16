@@ -15,18 +15,18 @@ for production use!
 ## Dependencies
 
 * [Ruby](http://ruby-lang.org)
-* [Fig](http://www.fig.sh)
 * [Docker](http://docker.com)
+* [docker-compose](https://docs.docker.com/compose)
 
 ## Running Texbin
 
-### Fig + Docker
+### Docker + docker-compose
 
-Just run `fig up` in order to build the required images and start the containers
-in the proper order. This command *will* take several minutes to complete. Go
-grab a coffee.
+Just run `docker-composee up` in order to build the required images and start the
+containers in the proper order. This command *will* take several minutes to complete.
+Go grab a coffee.
 
-After it's done, run `fig ps` to make sure all containers are up and running.
+After it's done, run `docker-compose ps` to make sure all containers are up and running.
 Then, visit <http://localhost> to open the application.
 
 At this point, feel free to change some code and refresh the browser to see
